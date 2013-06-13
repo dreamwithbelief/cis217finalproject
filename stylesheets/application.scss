@@ -1,0 +1,90 @@
+#menu, #order, #locations, #info {
+    [data-icon="phone-green"], [data-icon="circle-info"] {
+        width: 4em;
+        height: 25px;
+
+        & .ui-btn-inner {
+            padding-left: 1.5em;
+        }
+    }
+    .ui-icon-phone-green {
+        background-image: url("../img/icons/75-phone-green.png");
+        background-size: 80%;
+    }
+
+    .ui-icon-circle-info {
+        background-image: url("../img/icons/glyphicons_195_circle_info_black_i.png");
+        background-size: 80%;
+    }
+
+    .ui-icon-show-lines {
+        background-image: url("../img/icons/glyphicons_158_show_lines.png");
+    }
+
+    .ui-icon-map-marker-red {
+        background-image: url("../img/icons/07-map-marker-red.png");
+        background-size: 55%;
+        background-position: 4px 0;
+    }
+
+    .ui-icon-shopping-cart {
+        background-image: url("../img/icons/glyphicons_202_shopping_cart.png");
+        background-size: 95%;
+    }
+
+    .ui-grid-d, .ui-grid-a {
+      padding-top: 0.4em;
+      margin-bottom: 0.5em;
+    }
+
+    .ui-grid-a {
+      .ui-block-a {
+        width: 40%;
+      }
+
+      .ui-block-b {
+        width: 60%;
+      }
+    }
+
+    .ui-icon-checked {
+        background-image: url("../img/icons/117-todo.png");
+    }
+
+    .ui-header .ui-icon, ul .ui-icon-checked {
+        width: 25px;
+        height: 20px;
+        border-radius: 0;
+    }
+
+    li[data-icon="checked"] .ui-li-aside {
+      margin: 2em 0 .3em;
+    }
+
+    .ui-li-aside {
+      margin: 1em 0 0;
+      width: 40%;
+    }
+
+    li .ui-controlgroup {
+      padding: 0 1em .25em 0;
+      text-align: right;
+    }
+
+    #callus, #favorite {
+        background-color: rgba( 0, 0, 0, 0.9 );
+    }
+
+    .my_order {
+        display: none;
+    }
+
+    .show_order {
+        display: block;
+    }
+
+    .order_total {
+        margin-top: .2em;
+        font-size: 150%;
+    }
+}
