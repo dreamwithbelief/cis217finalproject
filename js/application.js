@@ -253,6 +253,10 @@ $( document ).ready( function() {
             event.preventDefault();
         }
 
+        if ( $(this).data( 'button' ) == 'order_options' ) {
+            navigator.notification.vibrate( 1000 );
+        }
+
         if ( $(this).data( 'order-option' ) == 'checkout' ) {
             addToOrder();
         }
