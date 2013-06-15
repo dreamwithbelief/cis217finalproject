@@ -8,11 +8,6 @@ $( document ).ready( function() {
     cart.soda = [];
 
 
-    function vibrate( length ) {
-        navigator.notification.vibrate( length );
-    }
-
-
     function addToOrder() {
         var pizza_size = $( 'input[name="pizza_size"]:checked' );
         var pizza_crust = $( 'select[name="crust"] option:selected' );
