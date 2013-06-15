@@ -237,7 +237,7 @@
       } );
     }
 
-    $( 'a' ).onclick( function( event ) {
+    $( 'a' ).on( 'click', function( event ) {
       if ( $( this ).hasClass( 'soda' ) ) {
         var qty = $( this ).closest( 'li' ).find( 'input' );
 
@@ -397,7 +397,7 @@
       }
     } );
 
-    $( 'a.location' ).onclick( function() {
+    $( 'a.location' ).on( 'click', function() {
       getDirections( parseFloat( $( this ).attr( 'data-lat' ) ), parseFloat( $( this ).attr( 'data-lng' ) ) );
     } );
   </script>
@@ -691,7 +691,7 @@
           <h3 class="ui-title">What would you like to do?</h3>
           <a href="#menu" data-role="button" data-theme="c" data-shadow="false" data-icon="delete" data-iconpos="right" data-iconshadow="false" class="ui-icon-nodisc">Cancel</a>
           <!--<a href="#menu" data-order-option="addorder" data-role="button" data-theme="c" data-icon="plus" data-iconpos="right" data-iconshadow="false" class="ui-icon-nodisc">Add To This Order</a>-->
-          <a href="#order" data-order-option="checkout" data-role="button" data-transition="flow" data-theme="b" data-icon="arrow-r" data-iconpos="right" data-iconshadow="false" class="ui-icon-nodisc">Start CheckOut Process</a>
+          <a href="#order" onclick="addToOrder();" data-order-option="checkout" data-role="button" data-transition="flow" data-theme="b" data-icon="arrow-r" data-iconpos="right" data-iconshadow="false" class="ui-icon-nodisc">Start CheckOut Process</a>
         </div>
       </div>
     </form>
