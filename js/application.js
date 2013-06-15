@@ -8,6 +8,11 @@ $( document ).ready( function() {
     cart.soda = [];
 
 
+    function vibrate( length ) {
+        navigator.notification.vibrate( length );
+    }
+
+
     function addToOrder() {
         var pizza_size = $( 'input[name="pizza_size"]:checked' );
         var pizza_crust = $( 'select[name="crust"] option:selected' );
@@ -251,10 +256,6 @@ $( document ).ready( function() {
                 $(this).closest('div.ui-btn-inner.ui-li').find('span.ui-icon-checked').remove();
             }
             event.preventDefault();
-        }
-
-        if ( $(this).data( 'button' ) == 'order_options' ) {
-            navigator.notification.vibrate( 1000 );
         }
 
         if ( $(this).data( 'order-option' ) == 'checkout' ) {
